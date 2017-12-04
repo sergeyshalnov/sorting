@@ -6,11 +6,11 @@ import java.util.regex.Pattern;
  * Created by Nechaev Mikhail
  * Since 12/11/2017.
  */
-public class SimpleString implements Numerical, Comparable<SimpleString> {
+public class SimpleString implements Numerical<SimpleString> {
 
     private static final Pattern SIMPLE_STRING = Pattern.compile("^[a-z]+$");
-    private static final int DIGIT_COUNT = 'z' - 'a';
-    private static final int MIN_CHAR_VALUE = 'a';
+    private static final int DIGIT_COUNT = 'z' - 'a' + 1;
+    private static final int MIN_DIGIT_VALUE = 'a' - 1;
 
     private final String data;
     private final int length;
@@ -28,10 +28,13 @@ public class SimpleString implements Numerical, Comparable<SimpleString> {
 
     @Override
     public int getDigit(int index) {
-        if (index < 0 || index >= length) {
-            throw new IndexOutOfBoundsException("Incorrect index " + index);
+        if (index < 0) {
+            throw new IndexOutOfBoundsException("Negative index " + index);
+        } else if (index >= getDigitCount()) {
+            return MIN_DIGIT_VALUE;
+        } else {
+            return data.charAt(index) - MIN_DIGIT_VALUE;
         }
-        return data.charAt(index) - MIN_CHAR_VALUE;
     }
 
     @Override
