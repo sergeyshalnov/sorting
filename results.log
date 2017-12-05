@@ -1,0 +1,62 @@
+# РЕЗУЛЬТАТ РАБОТЫ БЕНЧМАРКОВ
+
+### HeapSort
+
+    Benchmark                          Mode  Cnt    Score     Error  Units
+    HeapSortBench.longStringArraySort  avgt    5  390.723 ± 356.472  us/op
+    HeapSortBench.randomArraySort      avgt    5  159.429 ±  36.227  us/op
+    HeapSortBench.rangeArraySort       avgt    5  138.795 ±  67.852  us/op
+    HeapSortBench.regularHeapSort      avgt    5  154.917 ±  57.001  us/op
+    HeapSortBench.repetitiveArraySort  avgt    5  147.934 ±  34.470  us/op
+    HeapSortBench.reversedArraySort    avgt    5  146.957 ±  31.010  us/op
+    HeapSortBench.reversedHeapSort     avgt    5  156.054 ±  19.479  us/op
+    HeapSortBench.sortedArraySort      avgt    5  147.688 ±  56.257  us/op
+    HeapSortBench.stringArraySort      avgt    5  284.841 ±  69.369  us/op
+    HeapSortBench.uniqueArraySort      avgt    5  161.585 ±  59.120  us/op
+
+
+
+### QuickSort с переходом на сортировку вставками
+
+    Benchmark                                    Mode  Cnt    Score     Error  Units
+    InsertionQuickSortBench.longStringArraySort  avgt    5  281.384 ± 198.353  us/op
+    InsertionQuickSortBench.randomArraySort      avgt    5  101.419 ±  18.912  us/op
+    InsertionQuickSortBench.rangeArraySort       avgt    5   63.543 ±  40.460  us/op
+    InsertionQuickSortBench.regularHeapSort      avgt    5   93.112 ±  33.711  us/op
+    InsertionQuickSortBench.repetitiveArraySort  avgt    5   93.121 ±  10.737  us/op
+    InsertionQuickSortBench.reversedArraySort    avgt    5   25.637 ±  11.316  us/op
+    InsertionQuickSortBench.reversedHeapSort     avgt    5   95.975 ±  27.963  us/op
+    InsertionQuickSortBench.sortedArraySort      avgt    5   27.997 ±  19.190  us/op
+    InsertionQuickSortBench.stringArraySort      avgt    5  264.158 ±  79.603  us/op
+    InsertionQuickSortBench.uniqueArraySort      avgt    5  105.997 ±  33.784  us/op
+
+
+
+### MergeSort
+
+    Benchmark                           Mode  Cnt    Score     Error  Units
+    MergeSortBench.longStringArraySort  avgt    5  328.066 ± 233.032  us/op
+    MergeSortBench.randomArraySort      avgt    5  157.415 ±  21.885  us/op
+    MergeSortBench.rangeArraySort       avgt    5  134.284 ±  24.861  us/op
+    MergeSortBench.regularHeapSort      avgt    5  158.445 ±  58.335  us/op
+    MergeSortBench.repetitiveArraySort  avgt    5  164.209 ±  84.523  us/op
+    MergeSortBench.reversedArraySort    avgt    5   70.932 ±   7.615  us/op
+    MergeSortBench.reversedHeapSort     avgt    5  163.195 ± 101.015  us/op
+    MergeSortBench.sortedArraySort      avgt    5   82.595 ±  54.347  us/op
+    MergeSortBench.stringArraySort      avgt    5  240.997 ±  68.395  us/op
+    MergeSortBench.uniqueArraySort      avgt    5  156.260 ±  16.253  us/op
+
+
+
+### QuickSort + разбиение на три части
+    Benchmark                               Mode  Cnt    Score     Error  Units
+    PartitionSortBench.longStringArraySort  avgt    5  318.437 ± 202.780  us/op
+    PartitionSortBench.randomArraySort      avgt    5  161.678 ±  31.816  us/op
+    PartitionSortBench.rangeArraySort       avgt    5   48.216 ±  20.177  us/op
+    PartitionSortBench.regularHeapSort      avgt    5  172.268 ±  83.221  us/op
+    PartitionSortBench.repetitiveArraySort  avgt    5  118.823 ±  35.065  us/op
+    PartitionSortBench.reversedArraySort    avgt    5  104.149 ±  28.509  us/op
+    PartitionSortBench.reversedHeapSort     avgt    5  154.645 ±  22.837  us/op
+    PartitionSortBench.sortedArraySort      avgt    5  118.473 ±   7.122  us/op
+    PartitionSortBench.stringArraySort      avgt    5  281.309 ±  31.672  us/op
+    PartitionSortBench.uniqueArraySort      avgt    5  151.388 ±  17.560  us/op
